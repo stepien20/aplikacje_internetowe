@@ -9,9 +9,9 @@ const num2=document.querySelector(`#numB`)
 const display=document.querySelector(`#display`)
 butDod.addEventListener(`click`,evt=>{
     evt.preventDefault()
-licz1=num1.value 
-licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+    licz1=num1.value 
+    licz2=num2.value
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     display.innerHTML=`Wynik działania to ${parseFloat(licz1)+parseFloat(licz2)}`
 }else{
     display.innerHTML=`A lub B to nie liczba`
@@ -23,7 +23,7 @@ butOde.addEventListener(`click`,evt=>{
     evt.preventDefault()
 licz1=num1.value 
 licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     display.innerHTML=`Wynik działania to ${parseFloat(licz1)-parseFloat(licz2)}`
 }else{
     display.innerHTML=`A lub B to nie liczba`
@@ -35,7 +35,7 @@ butMnoz.addEventListener(`click`,evt=>{
     evt.preventDefault()
 licz1=num1.value 
 licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     display.innerHTML=`Wynik działania to ${parseFloat(licz1)*parseFloat(licz2)}`
 }else{
     display.innerHTML=`A lub B to nie liczba`
@@ -47,7 +47,7 @@ butDziel.addEventListener(`click`,evt=>{
     evt.preventDefault()
 licz1=num1.value 
 licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     if(licz2==0){
         display.innerHTML=`Nie można dzielić przez 0`
     }else{
@@ -62,7 +62,7 @@ butMod.addEventListener(`click`,evt=>{
     evt.preventDefault()
 licz1=num1.value 
 licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     if(licz2==0){
         display.innerHTML=`Nie można dzielić przez 0`
     }else{
@@ -77,7 +77,7 @@ butCal.addEventListener(`click`,evt=>{
     evt.preventDefault()
 licz1=num1.value 
 licz2=num2.value
-if(!isNaN(licz1)&&!isNaN(licz2)){
+if((!isNaN(licz1)&&licz1!='')&&(!isNaN(licz2)&&licz2!='')){
     if(licz2==0){
         display.innerHTML=`Nie można dzielić przez 0`
     }else{
@@ -91,3 +91,4 @@ if(!isNaN(licz1)&&!isNaN(licz2)){
 console.log(8%3)
 
 // console.log(parseInt(9.2))
+console.log(4.0%1)
