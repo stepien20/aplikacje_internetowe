@@ -1,0 +1,64 @@
+<?php 
+//zad1
+$tab=[];
+$sum=0;
+for ($i=0;$i<10;$i++){
+	$liczba=rand(1,20);
+	array_unshift($tab,$liczba);
+	echo $liczba." ";
+	$sum=$sum+$liczba;
+}
+$avg=$sum/10;
+echo "<br> srednia arytm. to $avg<br>";
+//zad2
+for($j=1;$j<=100;$j++){
+	if($j%2 and $j%3==0){
+		echo "$j ";
+	}
+}
+//zad3
+$zmien1=6;
+$zmien2=2;
+
+if(!($zmien1%$zmien2)){
+	echo "<br> $zmien1 jest podzielne przez $zmien2 <br>";
+}else{
+	echo" <br> $zmien1 nie jest podzielne przez $zmien2 <br>";
+}
+$BINtab=[];
+$dziesietne=10;
+
+while($dziesietne>0){
+	$reszta=$dziesietne%2;
+	echo"$dziesietne|$reszta<br>";
+	array_unshift($BINtab,$reszta);
+	$dziesietne=floor($dziesietne/2);
+}
+
+
+
+for ($k=0;$k<sizeof($BINtab);$k++){
+	echo"$BINtab[$k]";
+}
+$e=0;
+$val=9;
+$num=0;
+echo"<br><br>";
+while($num<$val){
+	$e++;
+	$num=2**$e;
+}
+echo"<br>i=$e"
+$tabbb=[]
+for($e;e>=0;e--){
+	if(val-2**e>=0){
+		array_unshift($tabbb,1);
+		$val-=2**e;
+	}else{
+		array_unshift($tabbb,1);
+	}
+}
+foreach ($tabbb as $key => $value) {
+	echo"$value"
+}
+?>
