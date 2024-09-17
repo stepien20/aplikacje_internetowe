@@ -1,0 +1,5 @@
+zapytanie 1
+SELECT uslugi.nazwa,uslugi.cena from uslugi where cena>=50;
+zapytanie 2 
+SELECT avg(uslugi.cena),count(uslugi.kadra_id) from uslugi join kadra on kadra.id=uslugi.kadra_id group by uslugi.kadra_id having uslugi.kadra_id=2;
+zapytanie 3
