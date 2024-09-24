@@ -1,0 +1,10 @@
+nl2br($string) daje nam br wszedzie gdzie jest fizycznie dany enter czyli jak amsz
+"ssssss
+aaaa
+ccc"
+bez tego wypisze ci i tak ssssssssssaaaaaaaaaaaaaccccccccc
+a echo nl2br($string)
+bedzie
+ssssss
+aaaa
+ccc
