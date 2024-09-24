@@ -1,0 +1,10 @@
+zapytanie1:
+SELECT towary.nazwa, towary.cena FROM `towary` WHERE 1 limit 4;
+zapytanie2:
+SELECT towary.cena FROM `towary` WHERE towary.nazwa="Ekierka";
+zapytanie3:
+update dostawcy set dostawcy.nazwa="Artykuly szkolne" where id=2;
+zapytanie4:
+SELECT promocja, COUNT(*) AS podsumowanie
+FROM towary
+GROUP BY promocja;
