@@ -8,3 +8,19 @@ bedzie
 ssssss
 aaaa
 ccc
+
+
+
+wordwrap($tekst,$limit,co ma wstawic,true(jezeli jest wyraz dluzszy 1 wyraz to go nie podzieli);
+jezeli jest kilka wyrazow w jednej linijce to jezeli koeljny przekroczy $limit to daje to co ma wstawic np "<br>"
+
+
+mb_strtoupper($teskt,"utf8")
+mb_strtolower
+
+strpost()
+substr()string,poczatek,koniec
+strcmp()-porownuje ciagi
+
+mb_strlen() ze znakami miedzynarodowymi
+str_let()
