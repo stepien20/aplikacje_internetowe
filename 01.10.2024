@@ -20,3 +20,82 @@ I nazwa dnai tygodnia monday
 m miesiac 01-12
 s sekundy 01-59
 y rok 
+
+
+
+<?php 
+
+$date=getdate();
+switch  ($date["wday"]){
+    case 0:
+        echo "Dziś jest niedziela";
+        break;
+    case 1;
+        echo "Dziś jest poniedziałek";
+        break;
+    case 2:
+        echo "Dziś jest wtorek";
+        break;
+    case 3:
+        echo "Dziś jest środa";
+        break;
+    case 4:
+        echo "Dziś jest czwartek";
+        break;
+    case 5:
+        echo "Dziś jest piątek";
+        break;
+    case 5:
+        echo "Dziś jest sobota";
+        break;
+}
+echo "</br>".$date["mday"]." ";
+switch ($date["mon"]){
+    case 1:
+        echo "Stycznia";
+        break;
+    case 2:
+        echo "Lutego";
+        break;
+    case 3:
+        echo "Marca";
+        break;
+    case 4:
+        echo "Kwietnia";
+        break;
+    case 5:
+        echo "Maja";
+        break;
+    case 6:
+        echo "Czerwca";
+        break;
+    case 7:
+        echo "Lipca";
+        break;
+    case 8:
+        echo "Sierpnia";
+        break;
+    case 9:
+        echo "Września";
+        break;
+    case 10:
+        echo "Października";
+        break;
+    case 11:
+        echo "Listopada";
+        break;
+    case 12:
+        echo "Grudnia";
+        break;
+}
+echo date(" Y ")."r."."</br>";
+echo "Jest to ".$date['yday']." dzień w roku";
+$koniec=["godz"=>16,"min"=>00];
+$start=["godz"=>intval(date("G")),"min"=>intval(date("i"))];
+$diff=["godz"=>$koniec["godz"]-$start["godz"],"min"=>$koniec["min"]-$start["min"]];
+if($diff["min"]<0){
+$diff["godz"]-=1;
+$diff["min"]=60 -abs($diff["min"]);
+}
+echo "</br>zostało: ".$diff["godz"]."godz i " .$diff["min"]."min do końca";
+?>
