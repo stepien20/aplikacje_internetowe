@@ -1,0 +1,96 @@
+*{
+    font-family: Goergia;
+    color: white;
+
+}
+/* h1:hover{
+    color:black;
+    animation: dupa 1s linear infinite;
+} */
+body{margin: 0px;}
+.container{width: 100%;}
+footer,header{
+    background-color: Maroon;
+    text-align: center;
+    padding: 2px;
+    width: 100%;
+}
+.container>main{
+    width: 100%;
+}
+#bloki>*{
+    background-color: lightsalmon;
+    height: 527px;
+}
+#lewy,#prawy{
+width: 15%;
+}
+#bloki{
+    width: 100%;
+    display: flex;
+}
+#srodkowy{
+    width: 70%;
+}
+#miniatury{
+    width: 100%;
+    background-color: maroon;height: 70px;
+}
+button{
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+#miniatury>img{
+    height: 70px;
+    animation: miniatura 4s linear forwards;
+}
+@keyframes miniatura{
+    0%{
+        padding-left: 50px;
+    }
+    100%{
+        padding-left: 0px;
+    }
+}
+#srodkowy>img{
+    display: block;
+    margin: auto;
+    margin-top: 45px;
+}
+@keyframes animacja{
+    0%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(120%);
+    }
+}
+#srodkowy>img:hover{
+animation: animacja 5s linear forwards;
+
+}
+/* 
+@keyframes dupa{
+    0%{
+       
+        color: rgb(255, 255, 255);
+    }
+    25%{
+        color: rgb(255, 0, 0);
+    }
+    50%{
+        color: rgb(0, 255, 0);
+    }
+    75%{
+        color: rgb(0, 0, 255);
+    }
+    100%{
+    
+        color: rgb(255, 255, 255);
+    }
+} */
