@@ -99,3 +99,10 @@ $diff["min"]=60 -abs($diff["min"]);
 }
 echo "</br>zostało: ".$diff["godz"]."godz i " .$diff["min"]."min do końca";
 ?>
+
+
+
+mktime() ustawia czas
+np 
+mktime(16,30,0,10,24,2020) 16:30:00 24.10.2020
+czyli mktime(godzina,minuta,sekunda,miesiac,dzien,rok)
