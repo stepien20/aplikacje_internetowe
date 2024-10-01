@@ -106,3 +106,40 @@ mktime() ustawia czas
 np 
 mktime(16,30,0,10,24,2020) 16:30:00 24.10.2020
 czyli mktime(godzina,minuta,sekunda,miesiac,dzien,rok)
+
+
+<?php 
+function czy_pierwsz(int $num1){
+    if($num1==1||$num1==2){
+        return true;
+    }
+   for ($i=2;$i<=$num1/2;$i++){
+    if($num1%$i==0){
+        echo "$i<br>";
+        return false;
+    }
+}
+return true;
+}
+function czy_pierwsza(int $num1){
+    if($num1==1||$num1==2){
+        return true;
+    }
+    for ($i=2;$i<=sqrt($num1);$i++){
+     if($num1%$i==0){
+         echo "$i<br>";
+         return false;
+     }
+ }
+ return true;
+ }
+$num2=163873;
+if(czy_pierwsza($num2)){
+    echo"$num2 to liczba pierwsza";
+}else{
+    echo"$num2 to nie jest liczba pierwsza";
+
+}
+
+
+?>
