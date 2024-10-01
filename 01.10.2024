@@ -1,0 +1,7 @@
+time() -zwraca aktualny czas jako liczbe od 000000 1 stycznia 1970 
+getdate()
+
+mday 1-31
+wday- 0-6 dzien tygodnia
+y day 0-365
+weekday dzien tygodnia po angielsku 
