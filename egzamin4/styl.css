@@ -1,0 +1,55 @@
+figure{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #EEEEEE;
+    font-family: Helvetica;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90%;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section>*{
+background-color: lightblue;
+height: 100px;
+width: 50%;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+section{
+    display: flex;
+    flex-basis: 100%;
+}
+header{
+    background-color: #DDDDDD;
+    height: 200xp;
+    flex-basis: 100%;
+}
+main{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+footer{
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+    flex-basis: 100%;
+}
+input[type="reset"],input[type="button"]{
+background-color: lightblue;
+color: navy;
+}
+a{
+    color: navy;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
