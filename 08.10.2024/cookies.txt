@@ -1,0 +1,41 @@
+$data=date("Y-m-d G:i:s");
+setcookie("wizyta",$data,time()+3600);
+
+
+
+
+<?php 
+if(!isset($_COOKIE['dane2']) && !isset($_POST['nazwa'])){
+
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizyuta</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+Podaj imie i naziwsko<br>
+<input type="text" name="nazwa" value=" " size="35">
+<p><input type="submit" value="wyslij" name="wyslij"></p>
+
+    </form>
+</body>
+</html>
+
+<?php
+
+}
+else{
+    if(!isset($_POST['nazwa'])){
+        setcookie('dane2',$_POST['nazwa'],time()+60);
+        echo"<p>dziekujemy za wprowadzenie danych </p>";
+    }else
+    {
+        echo "<p>Witamy po raz kolejny,".$_COOKIE['dane2']."</p><br>";
+    }   
+}
+?>
