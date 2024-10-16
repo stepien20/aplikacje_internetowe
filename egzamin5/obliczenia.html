@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+    <script src="main.js"  defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Całodobowa stacja paliw</h1>
+        </header>
+        <nav>
+            <a href="stacja.html"><img src="home.png" alt=""></a>
+            <a href="obliczenia.html"><img src="znak.png" alt=""></a>
+            <a href="kwerendy.txt">Pobierz dokumenty</a>
+        </nav>
+        <main>
+            <section>
+                <h2>Orientacyjny koszt paliwa</h2>
+                <label for="paliwo">
+                    Rodzaj paliwa (1-benzyna, 2-olej
+napędowy):
+                    <input type="number" name="paliwo" id="paliwo">
+                </label>
+                <label for="ile">
+                    Ile litrów?
+                    <input type="number" name="ile" id="ile">
+                </label>
+                <input type="submit" value="OBLICZ">
+                <p  id="display"></p>
+            </section>
+            <aside>
+                <img src="samochod.png" alt="samochód" width="300px">
+            </aside>
+        </main>
+        <footer>
+            <p> Strone opracował: 987965475848594</p>
+        </footer>
+    </div>
+</body>
+</html>
