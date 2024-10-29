@@ -1,1 +1,6 @@
+setcookie($nazwa,$wartosc, time()+60(sekund czyli minuta)*60(minut czyli 1 godzina)*24(godziny czyli 1 dzien)*365(dni czyli 1 rok) czyli na rok
+session_start();
 
+no i slay mamuy sesje
+
+session_destroy();
