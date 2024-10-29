@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container">
+        <form action="wynik.php" method="post">
+            <label for="imie">Imię:<input type="text" id="imie" name="imie"></label>
+
+            <label for="uczen">uczeń<input type="radio" id="uczen" name="rola" value="uczniem"></label>
+            <label for="rodzic">rodzic<input type="radio" id="rodzic"  name="rola" value="rodzicem"></label>
+            <label for="nauczyciel">nauczyciel<input type="radio" id="nauczyciel" name="rola" value="nauczycielem"></label>
+            
+            <select name="szkola" id="">
+                <option value="szkole podstawowej">szkoła podstawowa</option>
+                <option value="szkole średniej">szkoła średnia</option>
+                <option value="studiach wyższych">studia wyższe</option>
+            </select>
+   
+            <label>
+                Jestem pełnoletni
+                <input type="checkbox" name="dorosly" value=1>
+            </label>
+            
+            <input type="submit" name="sub" value="Prześlij dane">
+        </form>
+    </div>
+</body>
+</html>
