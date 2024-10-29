@@ -8,3 +8,41 @@ session_unset()-usuwa wszyskie zmienne z sesji
 Unset($_SESSION['nazwa'); usuwa to konkretne
           
 session_destroy();
+===========================================================================
+                <?php 
+session_start();
+if(isset($_POST['sub'])){
+    $_SESSION['ses']='kosz';
+    if(isset($_SESSION['koszyk'])){
+        $arr=$_SESSION['koszyk'];
+        array_push($arr,$_POST['produkt']);
+        $_SESSION['koszyk']=$arr;
+    }else{
+        $_SESSION['koszyk']=array();
+    }
+    var_dump($_SESSION);
+}
+?>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container">
+        <form action="index.php" method="post">
+            <select name="produkt" id="produkt">
+                <option value="jablko">jablko</option>
+                <option value="banan">banan</option>
+                <option value="gruszka">gruszka</option>
+                <option value="mango">mango</option>
+                <option value="kiwi">kiwi</option>
+            </select>
+            
+            <input type="submit" name="sub" value="Dodaj produkt do koszyka">
+        </form>
+    </div>
+</body>
+</html>
