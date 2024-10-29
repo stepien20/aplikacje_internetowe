@@ -3,4 +3,8 @@ session_start();
 
 no i slay mamuy sesje
 
+session_unset()-usuwa wszyskie zmienne z sesji
+
+Unset($_SESSION['nazwa'); usuwa to konkretne
+          
 session_destroy();
