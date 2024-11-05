@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@ try{
     $conn=0;
     exit();
 }
-
+echo"<a href='  klient.php'>dodaj</a>";
 echo"<table>";
 $query="SELECT * FROM KLIENCI";
 $result=mysqli_query($conn,$query);
@@ -44,7 +44,7 @@ echo "<tr>";
 foreach($r as $key=>$value){
     echo "<th>$key</th> ";
 }
-echo "</tr>";
+echo "</tr>";   
 echo "<tr>";
 foreach($r as $key=>$value){
     echo "<td>$value</td> ";
