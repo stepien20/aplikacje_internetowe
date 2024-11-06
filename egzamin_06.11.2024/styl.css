@@ -1,0 +1,50 @@
+body *{
+font-family: Century Serif;
+text-align: center;
+}
+
+header, footer{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+}
+
+figure{
+    width: 50%;
+    height: 470px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0px;
+}
+img{
+    width: 500px;
+        padding: 3px;
+        margin: 10px;
+        border: 2px slateblue dashed;
+}
+a{
+    color: white;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+button:hover{
+    background-color: indigo;
+}
+
+input[type="range"]{
+    width: 80%;
+}

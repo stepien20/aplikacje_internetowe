@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Efekty na obrazach</h2>
+        </header>
+        <main>
+            <figure>
+                <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku">
+                <label for="blur">Blur<input type="radio" id="blur" name="pszczola" value="blur"></label>
+                <label for="sepia">Sepia<input type="radio" id="sepia" name="pszczola" value="sepia"></label>
+                <label for="negatyw">Negatyw<input type="radio" id="negatyw" name="pszczola" value="invert"></label>
+                <button id="pszczola_but">Zastosuj</button>
+            </figure>
+            <figure>
+                <img src="pomarancza.jpg" alt="drzewo pomarańczy">
+                <section>
+                <button id="pomarancza_but_color">Kolorowy</button>
+                <button id="pomarancza_but_grayscale">Czarno-biały</button>
+            </section>
+            </figure>
+            <figure>
+                <img src="owoce.jpg" alt="Kosz pełen owoców">
+                <input type="range" name="owoce" id="owoce" min="0" max="100" value="100">
+                <button id="owoce_but">Zastosuj</button>
+            </figure>
+            <figure>
+                <img src="zolw.jpg" alt="Żółw w wodzie">
+                <input type="range" name="zolw" id="zolw" min="0" max="250" >
+                <button id="zolw_but">Zastosuj</button>
+            </figure>
+        </main>
+        <footer>
+         <p>   <a href="http://www.css.com/" target="_blank">Zobacz inne efekty
+            obrazu</a> </p>
+            <p>Stronę wykonał 2137473284</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
