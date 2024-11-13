@@ -9,6 +9,7 @@ header>*{
     font-size: 160%;
 }
 header{
+    display: flex;
     width: 100%;
 }
 header>section{
@@ -17,4 +18,36 @@ width: 75%;
 header>article{
     width: 25%;
     text-align: right;
+}
+main{
+    background-color: mintcream;
+    width: 100%;
+    padding: 80px;
+}
+footer{
+    width: 100%;
+display: flex;
+}
+footer>*{
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+input{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+}
+img{
+    box-shadow: 15px 15px 10px dimgray;
+}
+a{
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
 }
