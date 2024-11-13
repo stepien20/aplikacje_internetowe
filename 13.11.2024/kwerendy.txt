@@ -1,0 +1,2 @@
+1:
+insert into zawody_wedkarskie(Karty_wedkarskie_id ,Lowisko_id,data_zawodow,sedzia ) VALUES(2,4,'2021-09-28','Andrzej Nowak');
