@@ -1,0 +1,86 @@
+body *{
+    font-family: Garamond;
+   
+}
+body{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-areas: 
+    'header aside'
+    'main aside'
+    'footer footer'
+    ;
+}
+header{ 
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 80%;
+    float: right;
+    /* height: 80px; */
+    width: 100%;
+    grid-area: header;
+}
+main{
+    height: 600px;
+    /* width: 20%; */
+    /* float: right; */
+    width: 100%; 
+     grid-area: main;
+}
+aside{
+    background-color: coral;
+    width: 100%;
+    height: 680px;
+    grid-area: aside;
+}
+footer{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    grid-area: footer;
+}
+img{
+    border-radius: 50%;
+    padding: 0 10px;
+}
+article{
+    border: 1px solid tomato;
+    margin: 15px;
+    height: 470px;
+    overflow: scroll;
+}
+section{
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    margin: 2%;
+    padding: 3px;
+
+}
+.jola{
+background-color: #EEE;
+text-align: left;
+}
+.jola>img{
+    float:left;
+}
+.krzys{
+    background-color: #CCC;
+    text-align: right;
+}
+.krzys>img{
+    float: right;
+}
+button{
+    background-color: tomato;
+    border: 1px darkred;
+    padding: 5px;
+    font-weight: bold;
+}
+#random{
+    display: block;
+}
+input{
+    width: 500px;
+}
